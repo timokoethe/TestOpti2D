@@ -37,21 +37,24 @@ final class PlateShapedFunctionsTest: XCTestCase {
         // Values have to be greater than 0.
         let result_01 = PlateShapedFunctions.boothFunc(parameter: positiveSample_01, parameter: positiveSample_02)
         let result_02 = PlateShapedFunctions.boothFunc(parameter: positiveSample_02, parameter: positiveSample_01)
-        XCTAssertEqual(result_01 > 0, result_02 > 0, "The results have to be greater than the minimum.")
+        XCTAssertGreaterThan(result_01, 0, "The result has to be greater than the minimum.")
+        XCTAssertGreaterThan(result_02, 0, "The result has to be greater than the minimum.")
     }
     
     func testMatyasFuncPositiveSamples() throws {
         // Values have to be greater than 0.
         let result_01 = PlateShapedFunctions.matyasFunc(parameter: positiveSample_01, parameter: positiveSample_02)
         let result_02 = PlateShapedFunctions.matyasFunc(parameter: positiveSample_02, parameter: positiveSample_01)
-        XCTAssertEqual(result_01 > 0, result_02 > 0, "The results have to be greater than the minimum.")
+        XCTAssertGreaterThan(result_01, 0, "The result has to be greater than the minimum.")
+        XCTAssertGreaterThan(result_02, 0, "The result has to be greater than the minimum.")
     }
     
     func testMccormickFuncPositiveSamples() throws {
         // Values have to be greater than -1.913222954882274.
         let result_01 = PlateShapedFunctions.mccormickFunc(parameter: positiveSample_01, parameter: positiveSample_02)
         let result_02 = PlateShapedFunctions.mccormickFunc(parameter: positiveSample_02, parameter: positiveSample_01)
-        XCTAssertEqual(result_01 > -1.913222954882274, result_02 > -1.913222954882274, "The results have to be greater than the minimum.")
+        XCTAssertGreaterThan(result_01, -1.913222954882274, "The result has to be greater than the minimum.")
+        XCTAssertGreaterThan(result_02, -1.913222954882274, "The result has to be greater than the minimum.")
     }
     
     
@@ -61,21 +64,24 @@ final class PlateShapedFunctionsTest: XCTestCase {
         // Values have to be greater than 0.
         let result_01 = PlateShapedFunctions.boothFunc(parameter: negativeSample_01, parameter: negativeSample_02)
         let result_02 = PlateShapedFunctions.boothFunc(parameter: negativeSample_02, parameter: negativeSample_01)
-        XCTAssertEqual(result_01 > 0, result_02 > 0, "The results have to be greater than the minimum.")
+        XCTAssertGreaterThan(result_01, 0, "The result has to be greater than the minimum.")
+        XCTAssertGreaterThan(result_02, 0, "The result has to be greater than the minimum.")
     }
     
     func testMatyasFuncNegativeSamples() throws {
         // Values have to be greater than 0.
         let result_01 = PlateShapedFunctions.matyasFunc(parameter: negativeSample_01, parameter: negativeSample_02)
         let result_02 = PlateShapedFunctions.matyasFunc(parameter: negativeSample_02, parameter: negativeSample_01)
-        XCTAssertEqual(result_01 > 0, result_02 > 0, "The results have to be greater than the minimum.")
+        XCTAssertGreaterThan(result_01, 0, "The result has to be greater than the minimum.")
+        XCTAssertGreaterThan(result_02, 0, "The result has to be greater than the minimum.")
     }
     
     func testMccormickFuncNegativeSamples() throws {
         // Values have to be greater than -1.913222954882274.
         let result_01 = PlateShapedFunctions.mccormickFunc(parameter: negativeSample_01, parameter: negativeSample_02)
         let result_02 = PlateShapedFunctions.mccormickFunc(parameter: negativeSample_02, parameter: negativeSample_01)
-        XCTAssertEqual(result_01 > -1.913222954882274, result_02 > -1.913222954882274, "The results have to be greater than the minimum.")
+        XCTAssertGreaterThan(result_01, -1.913222954882274, "The result has to be greater than the minimum.")
+        XCTAssertGreaterThan(result_02, -1.913222954882274, "The result has to be greater than the minimum.")
     }
     
     
@@ -85,20 +91,23 @@ final class PlateShapedFunctionsTest: XCTestCase {
         // Values have to be greater than 0.
         let result_01 = PlateShapedFunctions.boothFunc(parameter: positiveSample_01, parameter: negativeSample_01)
         let result_02 = PlateShapedFunctions.boothFunc(parameter: negativeSample_02, parameter: positiveSample_02)
-        XCTAssertEqual(result_01 > 0, result_02 > 0, "The results have to be greater than the minimum.")
+        XCTAssertGreaterThan(result_01, 0, "The result has to be greater than the minimum.")
+        XCTAssertGreaterThan(result_02, 0, "The result has to be greater than the minimum.")
     }
     
     func testMatyasFuncMixedSamples() throws {
         // Values have to be greater than 0.
         let result_01 = PlateShapedFunctions.matyasFunc(parameter: positiveSample_01, parameter: negativeSample_01)
         let result_02 = PlateShapedFunctions.matyasFunc(parameter: negativeSample_02, parameter: positiveSample_02)
-        XCTAssertEqual(result_01 > 0, result_02 > 0, "The results have to be greater than the minimum.")
+        XCTAssertGreaterThan(result_01, 0, "The result has to be greater than the minimum.")
+        XCTAssertGreaterThan(result_02, 0, "The result has to be greater than the minimum.")
     }
     
     func testMccormickFuncMixedSamples() throws {
         // Values have to be greater than -1.913222954882274.
         let result_01 = PlateShapedFunctions.mccormickFunc(parameter: positiveSample_01, parameter: negativeSample_01)
         let result_02 = PlateShapedFunctions.mccormickFunc(parameter: negativeSample_02, parameter: positiveSample_02)
-        XCTAssertEqual(result_01 > -1.913222954882274, result_02 > -1.913222954882274, "The results have to be greater than the minimum.")
+        XCTAssertGreaterThan(result_01, -1.913222954882274, "The result has to be greater than the minimum.")
+        XCTAssertGreaterThan(result_02, -1.913222954882274, "The result has to be greater than the minimum.")
     }
 }

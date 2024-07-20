@@ -3,28 +3,13 @@
 [![Build](https://github.com/timokoethe/OptiMathKit/actions/workflows/build.yml/badge.svg)](https://github.com/timokoethe/OptiMathKit/actions/workflows/build.yml)
 [![Test](https://github.com/timokoethe/OptiMathKit/actions/workflows/test.yml/badge.svg)](https://github.com/timokoethe/OptiMathKit/actions/workflows/test.yml)
 
-OptiMathKit is a Swift Package to help you.
+OptiMathKit is a Swift framework for macOS that provides a comprehensive collection of target functions designed specifically for testing optimization algorithms aimed at finding global minima. These functions, often used as benchmarks in optimization research, are characterized by having one or more local minima and exactly one global minimum. Each target function in the framework takes two inputs of type Double and produces a single output of type Double, effectively projecting from a state space to a target space. The functions are grouped according to their significant physical properties and shapes to facilitate targeted testing.
 
-## Requirements
-- Xcode 15.0+
-- Swift 5.9+
-- macOS 10.15+
-
-## Installation
-1.  Copy the resource url:
-```
-https://github.com/timokoethe/NotificationManager.git
-```
-2.  Open your Xcode project.
-3.  Navigate to _File_ / _Add Package Dependency_.
-4.  Paste the resource url at the top right corner in _Search or Enter Package URL_.
-5.  Choose the right target under _Add to project_.
-6.  To complete hit _Add Package_.
-
-## Setup
-
-## Usage
-
+## Functions
+### Plate Shape Functions
+- Booth Function
+- Matyas Function
+- McCormick Function
 
 ## Contributing
 If you encounter any bugs or have feature requests, please feel free to open an issue on our GitHub repository.
