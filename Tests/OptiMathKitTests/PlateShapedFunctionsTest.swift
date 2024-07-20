@@ -8,6 +8,11 @@ final class PlateShapedFunctionsTest: XCTestCase {
     let negativeSample_01 = Double.random(in: -10..<0)
     let negativeSample_02 = Double.random(in: -10..<0)
     
+    let mccormickPositiveSample_x1 = Double.random(in: 0.1..<4)
+    let mccormickPositiveSample_x2 = Double.random(in: 0.1..<4)
+    let mccormickNegativeSample_x1 = Double.random(in: -1.5..<0)
+    let mccormickNegativeSample_x2 = Double.random(in: -3..<0)
+    
     
     // MARK: Correct Minimum Tests
     
@@ -51,10 +56,8 @@ final class PlateShapedFunctionsTest: XCTestCase {
     
     func testMccormickFuncPositiveSamples() throws {
         // Values have to be greater than -1.913222954882274.
-        let result_01 = PlateShapedFunctions.mccormickFunc(parameter: positiveSample_01, parameter: positiveSample_02)
-        let result_02 = PlateShapedFunctions.mccormickFunc(parameter: positiveSample_02, parameter: positiveSample_01)
+        let result_01 = PlateShapedFunctions.mccormickFunc(parameter: mccormickPositiveSample_x1, parameter: mccormickPositiveSample_x2)
         XCTAssertGreaterThan(result_01, -1.913222954882274, "The result has to be greater than the minimum.")
-        XCTAssertGreaterThan(result_02, -1.913222954882274, "The result has to be greater than the minimum.")
     }
     
     
@@ -78,10 +81,8 @@ final class PlateShapedFunctionsTest: XCTestCase {
     
     func testMccormickFuncNegativeSamples() throws {
         // Values have to be greater than -1.913222954882274.
-        let result_01 = PlateShapedFunctions.mccormickFunc(parameter: negativeSample_01, parameter: negativeSample_02)
-        let result_02 = PlateShapedFunctions.mccormickFunc(parameter: negativeSample_02, parameter: negativeSample_01)
+        let result_01 = PlateShapedFunctions.mccormickFunc(parameter: mccormickNegativeSample_x1, parameter: mccormickNegativeSample_x2)
         XCTAssertGreaterThan(result_01, -1.913222954882274, "The result has to be greater than the minimum.")
-        XCTAssertGreaterThan(result_02, -1.913222954882274, "The result has to be greater than the minimum.")
     }
     
     
@@ -105,8 +106,8 @@ final class PlateShapedFunctionsTest: XCTestCase {
     
     func testMccormickFuncMixedSamples() throws {
         // Values have to be greater than -1.913222954882274.
-        let result_01 = PlateShapedFunctions.mccormickFunc(parameter: positiveSample_01, parameter: negativeSample_01)
-        let result_02 = PlateShapedFunctions.mccormickFunc(parameter: negativeSample_02, parameter: positiveSample_02)
+        let result_01 = PlateShapedFunctions.mccormickFunc(parameter: mccormickPositiveSample_x1, parameter: mccormickNegativeSample_x2)
+        let result_02 = PlateShapedFunctions.mccormickFunc(parameter: mccormickNegativeSample_x1, parameter: mccormickPositiveSample_x2)
         XCTAssertGreaterThan(result_01, -1.913222954882274, "The result has to be greater than the minimum.")
         XCTAssertGreaterThan(result_02, -1.913222954882274, "The result has to be greater than the minimum.")
     }

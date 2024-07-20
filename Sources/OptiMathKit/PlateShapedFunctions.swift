@@ -36,16 +36,14 @@ public struct PlateShapedFunctions {
     }
     
     /// Calculates a target value according to the McCormick Function. Normally the
-    /// function is evaluated on a rectangle with x1, x2 in [-10; 10].
+    /// function is evaluated on a rectangle with x1 in [-1.5; 4] and x2 in [-3; 4].
     /// - Parameters:
     ///   - x1: arbitrary double value
     ///   - x2: arbitrary double value
     /// - Returns: target value calculated by the function
     public static func mccormickFunc(parameter x1: Double, parameter x2: Double) -> Double {
-        let firstExp: Double = sin(x1 + x2) + pow((x1 - x2), 2)
-        let secondExp: Double = -(1.5 * x1) + (2.5 * x2) + 1
-        
-        let result: Double = firstExp + secondExp
+        let firstExp: Double = sin(x1 + x2) + pow((x1 - x2), 2) - 1.5 * x1 + 2.5 * x2 + 1
+        let result: Double = firstExp
         return result
     }
 }
