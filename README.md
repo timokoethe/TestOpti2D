@@ -1,5 +1,7 @@
 # NotificationManager
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/license/mit)
+[![Build](https://github.com/timokoethe/OptiMathKit/actions/workflows/build.yml/badge.svg)](https://github.com/timokoethe/OptiMathKit/actions/workflows/build.yml)
+[![Test](https://github.com/timokoethe/OptiMathKit/actions/workflows/test.yml/badge.svg)](https://github.com/timokoethe/OptiMathKit/actions/workflows/test.yml)
 
 OptiMathKit is a Swift Package to help you.
 
