@@ -4,23 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "OptiMathKit",
+    name: "TestOpti2D",
     platforms: [
         .macOS(.v10_15),
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "OptiMathKit",
-            targets: ["OptiMathKit"]),
+            name: "TestOpti2D",
+            targets: ["TestOpti2D"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "OptiMathKit"),
+            name: "TestOpti2D"),
         .testTarget(
-            name: "OptiMathKitTests",
-            dependencies: ["OptiMathKit"]),
+            name: "TestOpti2D",
+            dependencies: ["TestOpti2D"]),
     ]
 )

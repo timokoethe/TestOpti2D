@@ -1,5 +1,5 @@
 import XCTest
-@testable import OptiMathKit
+@testable import TestOpti2D
 
 final class PlateShapedFunctionsTest: XCTestCase {
     // Set up random numbers
