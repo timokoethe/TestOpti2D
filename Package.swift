@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "TestOpti2D"),
         .testTarget(
-            name: "TestOpti2D",
+            name: "TestOpti2DTests",
             dependencies: ["TestOpti2D"]),
     ]
 )
