@@ -111,4 +111,28 @@ final class PlateShapedFunctionsTest: XCTestCase {
         XCTAssertGreaterThan(result_01, -1.913222954882274)
         XCTAssertGreaterThan(result_02, -1.913222954882274)
     }
+    
+    
+    //MARK: Additional Tests
+    
+    func testGetMinimumOfFunction() throws {
+        let boothFunctionMinimum = PlateShapedFunctions.getMinimumOf(.BoothFunction)
+        let matyasFunctionMinimum = PlateShapedFunctions.getMinimumOf(.MatyasFunction)
+        let mccormickFunctionMinimum = PlateShapedFunctions.getMinimumOf(.MccormickFunction)
+        
+        XCTAssertEqual(boothFunctionMinimum, 0.0)
+        XCTAssertEqual(matyasFunctionMinimum, 0.0)
+        XCTAssertEqual(mccormickFunctionMinimum, -1.913222954882274)
+    }
+    
+    func testGetInputForMinimumOfFunction() throws {
+        let boothFunctionInputForMinimum = PlateShapedFunctions.getInputForMinimumOf(.BoothFunction)
+        let matyasFunctionInputForMinimum = PlateShapedFunctions.getInputForMinimumOf(.MatyasFunction)
+        let mccormickFunctionInputForMinimum = PlateShapedFunctions.getInputForMinimumOf(.MccormickFunction)
+        
+        XCTAssert(boothFunctionInputForMinimum == (1.0, 3.0))
+        XCTAssert(matyasFunctionInputForMinimum == (0.0, 0.0))
+        XCTAssert(mccormickFunctionInputForMinimum == (-0.54719, -1.54719))
+
+    }
 }

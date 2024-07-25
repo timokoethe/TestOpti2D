@@ -46,4 +46,40 @@ public struct PlateShapedFunctions {
         let result: Double = firstExp
         return result
     }
+    
+    
+    /// Returns the global minimum of a given function in the defined input domain.
+    /// - Parameter functionName: function to get the minimum
+    /// - Returns: global minimum of the given function
+    public static func getMinimumOf(_ functionName: PlateShapedFunctionNames) -> Double {
+        switch functionName {
+        case .BoothFunction:
+            return 0.0
+        case .MatyasFunction:
+            return 0.0
+        case .MccormickFunction:
+            return -1.913222954882274
+        }
+    }
+    
+    /// Returns the input to get the global minimum of a given function in the defined input domain.
+    /// - Parameter functionName: function to get the input for the global minimum
+    /// - Returns: input for the global minimum of the given function
+    public static func getInputForMinimumOf(_ functionName: PlateShapedFunctionNames) -> (Double, Double) {
+        switch functionName {
+        case .BoothFunction:
+            return (1.0, 3.0)
+        case .MatyasFunction:
+            return (0.0, 0.0)
+        case .MccormickFunction:
+            return (-0.54719, -1.54719)
+        }
+    }
+}
+
+/// This represents a type for each plate shaped function by its name.
+public enum PlateShapedFunctionNames {
+    case BoothFunction
+    case MatyasFunction
+    case MccormickFunction
 }

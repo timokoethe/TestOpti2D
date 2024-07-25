@@ -48,4 +48,20 @@ final class BowlShapedFunctionsTest: XCTestCase {
         XCTAssertGreaterThan(result_01, 0)
         XCTAssertGreaterThan(result_02, 0)
     }
+    
+    
+    //MARK: Additional Tests
+    
+    func testGetMinimumOfFunction() throws {
+        let bohachevskyFunctionMinimum = BowlShapedFunctions.getMinimumOf(.BohachevskyFunction)
+        
+        XCTAssertEqual(bohachevskyFunctionMinimum, 0.0)
+    }
+    
+    func testGetInputForMinimumOfFunction() throws {
+        let bohachevskyFunctionInputForMinimum = BowlShapedFunctions.getInputForMinimumOf(.BohachevskyFunction)
+        
+        XCTAssert(bohachevskyFunctionInputForMinimum == (0.0, 0.0))
+
+    }
 }

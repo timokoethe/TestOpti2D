@@ -20,5 +20,28 @@ public struct BowlShapedFunctions {
     }
     
     
+    /// Returns the global minimum of a given function in the defined input domain.
+    /// - Parameter functionName: function to get the minimum
+    /// - Returns: global minimum of the given function
+    public static func getMinimumOf(_ functionName: BowlShapedFunctionNames) -> Double {
+        switch functionName {
+        case .BohachevskyFunction:
+            return 0.0
+        }
+    }
+    
+    /// Returns the input to get the global minimum of a given function in the defined input domain.
+    /// - Parameter functionName: function to get the input for the global minimum
+    /// - Returns: input for the global minimum of the given function
+    public static func getInputForMinimumOf(_ functionName: BowlShapedFunctionNames) -> (Double, Double) {
+        switch functionName {
+        case .BohachevskyFunction:
+            return (0.0, 0.0)
+        }
+    }
 }
 
+/// This represents a type for each bowl shaped function by its name.
+public enum BowlShapedFunctionNames {
+    case BohachevskyFunction
+}

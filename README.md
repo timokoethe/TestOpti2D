@@ -7,11 +7,16 @@ TestOpti2D is a Swift framework for macOS that provides a comprehensive collecti
 
 ## Functions
 ### Plate-Shaped Functions
-- Booth Function
-- Matyas Function
-- McCormick Function
+|Function           |Input domain $D$ |Function |Global minimum|
+|-------------------|-----------------|--------------|--------------|
+| Booth Function    | $x_1 = [3, 5]$  |              | -            |
+| Matyas Function   | $D = [3, 5]$    | -            | -            |
+| McCormick Function| $D = [3, 5]$    | -            | -            |
 
 ### Bowl-Shaped Functions
+|Function            |Input domain  |Global minimum|
+|--------------------|--------------|--------------|
+|Bohachevsky Function| $D = [3, 5]$ | -            |
 
 
 ## Contributing
