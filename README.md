@@ -6,7 +6,7 @@
 TestOpti2D is a Swift framework for macOS that provides a comprehensive collection of target functions designed specifically for testing optimization algorithms aimed at finding global minima. These functions, often used as benchmarks in optimization research, are characterized by having one or more local minima and exactly one global minimum in given input domain. Each target function in the framework takes two inputs of type Double and produces a single output of type Double, effectively projecting from a state space to a target space. The functions are grouped according to their significant physical properties and shapes to facilitate targeted testing.
 
 ## Functions
-Take care of the input domain!
+Please note that each optimization function in this framework has a specific input domain. The global minimum can only be found within this designated domain. Make sure to consult the documentation for the precise input ranges before testing the algorithms.
 ### Plate-Shaped Functions
 |Name               |Input Domain                                   |Function                                                                  |Global Minimum                                   |
 |-------------------|-----------------------------------------------|--------------------------------------------------------------------------|-------------------------------------------------|
@@ -18,6 +18,13 @@ Take care of the input domain!
 |Name                  |Input Domain                                       |Function                                                                      |Global Minimum                                   |
 |----------------------|---------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------|
 | Bohachevsky Function | <sub>$x \in [-100, 100] \times [-100, 100]$</sub> | <sub>$f(x) = x_1^2+2x_2^2 - 0.3cos(3\pi x_1) - 0.4cos(4\pi x_2) + 0.7$</sub> | <sub>$f(x^* ) = 0$, at<br> $x^* = (0, 0)$</sub> |
+
+## Usage
+Please import the framework by copying the following URL and adding it to your Xcode project:
+```
+https://github.com/timokoethe/NotificationManager.git
+```
+Make sure to import the library by adding ```import TestOpti2D``` to the top of your code.
 
 
 ## Contributing
