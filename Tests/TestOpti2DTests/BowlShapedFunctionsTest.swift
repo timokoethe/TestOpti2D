@@ -22,7 +22,7 @@ final class BowlShapedFunctionsTest: XCTestCase {
         let minimum = BowlShapedFunctions.sphereFunc(parameter: 0, parameter: 0)
         XCTAssertTrue(minimum == 0)
     }
-    
+  
     
     // MARK: Positive Smaples compared to Minimum Tests
 
@@ -78,7 +78,7 @@ final class BowlShapedFunctionsTest: XCTestCase {
         XCTAssertGreaterThan(result_01, 0)
         XCTAssertGreaterThan(result_02, 0)
     }
-    
+  
     
     //MARK: Additional Tests
     

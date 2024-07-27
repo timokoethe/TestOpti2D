@@ -28,7 +28,7 @@ public struct BowlShapedFunctions {
         let result: Double = pow(x1, 2) + pow(x2, 2)
         return result
     }
-    
+  
     
     /// Returns the global minimum of a given function in the defined input domain.
     /// - Parameter functionName: function to get the minimum
