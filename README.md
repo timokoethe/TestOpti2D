@@ -18,6 +18,7 @@ Please note that each optimization function in this framework has a specific inp
 |Name                  |Input Domain                                       |Function                                                                      |Global Minimum                                   |
 |----------------------|---------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------|
 | Bohachevsky Function | <sub>$x \in [-100, 100] \times [-100, 100]$</sub> | <sub>$f(x) = x_1^2+2x_2^2 - 0.3cos(3\pi x_1) - 0.4cos(4\pi x_2) + 0.7$</sub> | <sub>$f(x^* ) = 0$, at<br> $x^* = (0, 0)$</sub> |
+| Sphere Function  | <sub>$x \in [-5.12, 5.12] \times [-5.12, 5.12]$</sub> | <sub>$f(x) = x_1^2 + x_2^2$</sub> | <sub>$f(x^* ) = 0$, at<br> $x^* = (0, 0)$</sub> |
 
 ## Installation
 1. Please copy the following package URL to import the framework in your Xcode project:
