@@ -22,7 +22,7 @@ Please note that each optimization function in this framework has a specific inp
 ## Usage
 Please import the framework by copying the following URL and adding it to your Xcode project:
 ```
-https://github.com/timokoethe/NotificationManager.git
+https://github.com/timokoethe/TestOpti2D.git
 ```
 Make sure to import the library by adding ```import TestOpti2D``` to the top of your code.
 
