@@ -12,7 +12,7 @@ Please note that each optimization function in this framework has a specific inp
 |-------------------|-----------------------------------------------|--------------------------------------------------------------------------|-------------------------------------------------|
 | Booth Function    | <sub>$x \in [-10, 10] \times [-10, 10]$</sub> | <sub>$f(x) = (x_1 + 2x_2 - 7)^2 + (2x_1 + x_2 - 5)^2$</sub>              | <sub>$f(x^* ) = 0$, at<br> $x^* = (1, 3)$</sub> |
 | Matyas Function   | <sub>$x \in [-10, 10] \times [-10, 10]$</sub> | <sub>$f(x) = 0.26(x_1^2 + x_2^2) - 0.48x_1x_2$</sub>                     | <sub>$f(x^* ) = 0$, at<br> $x^* = (0, 0)$</sub> |
-| McCormick Function| <sub>$x \in [-1.5, 4] \times [-3, 4]$</sub>   | <sub>$f(x) = sin(x_1 + x_2) + (x_1 - x_2)^2 - 1.5x_1 + 2.5x_2 + 1$</sub> | <sub>$f(x^* ) = 0$, at<br> $x^* = (0, 1)$</sub> |
+| McCormick Function| <sub>$x \in [-1.5, 4] \times [-3, 4]$</sub>   | <sub>$f(x) = sin(x_1 + x_2) + (x_1 - x_2)^2 - 1.5x_1 + 2.5x_2 + 1$</sub> | <sub>$f(x^* ) = -1.9133$, at<br> $x^* = (-0.54719, -1.54719)$</sub> |
 
 ### Bowl-Shaped Functions
 |Name                  |Input Domain                                       |Function                                                                      |Global Minimum                                   |
