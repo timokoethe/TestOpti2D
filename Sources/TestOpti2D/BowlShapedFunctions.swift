@@ -18,6 +18,17 @@ public struct BowlShapedFunctions {
         return result
     }
     
+    /// Calculates a target value according to the Sphere Function. Normally the
+    /// function is evaluated on the hypercube with x1, x2 in [-5.12, 5.12]
+    /// - Parameters:
+    ///   - x1: arbitrary double value
+    ///   - x2: arbitrary double value
+    /// - Returns: target value calculated by the function
+    public static func sphereFunc(parameter x1: Double, parameter x2: Double) -> Double {
+        let result: Double = pow(x1, 2) + pow(x2, 2)
+        return result
+    }
+  
     
     /// Returns the global minimum of a given function in the defined input domain.
     /// - Parameter functionName: function to get the minimum
@@ -25,6 +36,8 @@ public struct BowlShapedFunctions {
     public static func getMinimumOf(_ functionName: BowlShapedFunctionNames) -> Double {
         switch functionName {
         case .BohachevskyFunction:
+            return 0.0
+        case .SphereFunction:
             return 0.0
         }
     }
@@ -36,6 +49,8 @@ public struct BowlShapedFunctions {
         switch functionName {
         case .BohachevskyFunction:
             return (0.0, 0.0)
+        case .SphereFunction:
+            return (0.0, 0.0)
         }
     }
 }
@@ -43,4 +58,5 @@ public struct BowlShapedFunctions {
 /// This represents a type for each bowl shaped function by its name.
 public enum BowlShapedFunctionNames {
     case BohachevskyFunction
+    case SphereFunction
 }
