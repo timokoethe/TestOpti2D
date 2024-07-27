@@ -19,19 +19,19 @@ Please note that each optimization function in this framework has a specific inp
 |----------------------|---------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------|
 | Bohachevsky Function | <sub>$x \in [-100, 100] \times [-100, 100]$</sub> | <sub>$f(x) = x_1^2+2x_2^2 - 0.3cos(3\pi x_1) - 0.4cos(4\pi x_2) + 0.7$</sub> | <sub>$f(x^* ) = 0$, at<br> $x^* = (0, 0)$</sub> |
 
-## Usage
-Please import the framework by copying the following URL and adding it to your Xcode project:
+## Installation
+1. Please copy the following package URL to import the framework in your Xcode project:
 ```
 https://github.com/timokoethe/TestOpti2D.git
 ```
-Make sure to import the library by adding ```import TestOpti2D``` to the top of your code.
+2. Add the following import statement at the top of the Swift file where you want to use TestOpti2D:
+```
+import TestOpti2D
+```
+3. You’re all set! You can now use the functionality provided by TestOpti2D in your project.
 
-
-## Contributing
-If you encounter any bugs or have feature requests, please feel free to open an issue on our GitHub repository.
-
-## Support
-If you have any questions, feedback, or need assistance with OptiMathKit, please don't hesitate to contact us. We're here to help!
+## Contributing & Support
+If you encounter any bugs or have feature requests, please feel free to open an issue on our GitHub repository. If you have any questions, feedback, or need assistance with TestOpti2D, please don't hesitate to contact us. We're here to help!
 
 ## License
 TestOpti2D is released under the [MIT License](https://opensource.org/license/mit).
