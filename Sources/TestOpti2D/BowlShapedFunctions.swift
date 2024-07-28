@@ -55,7 +55,7 @@ public struct BowlShapedFunctions {
     }
 }
 
-/// This represents a type for each bowl shaped function by its name.
+/// Represents a type for each bowl shaped function by its name.
 public enum BowlShapedFunctionNames {
     case BohachevskyFunction
     case SphereFunction
