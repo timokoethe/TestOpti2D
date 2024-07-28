@@ -31,6 +31,8 @@ import TestOpti2D
 ```
 3. You’re all set! You can now use the functionality provided by TestOpti2D in your project.
 
+Check out our documentation [here](https://timokoethe.com/testopti2d/documentation/testopti2d).
+
 ## Contributing & Support
 If you encounter any bugs or have feature requests, please feel free to open an issue on our GitHub repository. If you have any questions, feedback, or need assistance with TestOpti2D, please don't hesitate to contact us. We're here to help!
 
