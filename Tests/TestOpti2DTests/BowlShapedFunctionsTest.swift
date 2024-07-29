@@ -22,6 +22,12 @@ final class BowlShapedFunctionsTest: XCTestCase {
         let minimum = BowlShapedFunctions.sphereFunc(parameter: 0, parameter: 0)
         XCTAssertTrue(minimum == 0)
     }
+    
+    func testSumOfDifferentPowersFuncMinimum() throws {
+        // Minimum at (0,0)
+        let minimum = BowlShapedFunctions.sumOfDifferentPowersFunc(parameter: 0, parameter: 0)
+        XCTAssertTrue(minimum == 0)
+    }
   
     
     // MARK: Positive Smaples compared to Minimum Tests
@@ -38,6 +44,14 @@ final class BowlShapedFunctionsTest: XCTestCase {
         // Values have to be greater than 0.
         let result_01 = BowlShapedFunctions.sphereFunc(parameter: positiveSample_01, parameter: positiveSample_02)
         let result_02 = BowlShapedFunctions.sphereFunc(parameter: positiveSample_02, parameter: positiveSample_01)
+        XCTAssertGreaterThan(result_01, 0)
+        XCTAssertGreaterThan(result_02, 0)
+    }
+    
+    func testSumOfDifferentPowersFuncPositiveSamples() throws {
+        // Values have to be greater than 0.
+        let result_01 = BowlShapedFunctions.sumOfDifferentPowersFunc(parameter: positiveSample_01, parameter: positiveSample_02)
+        let result_02 = BowlShapedFunctions.sumOfDifferentPowersFunc(parameter: positiveSample_02, parameter: positiveSample_01)
         XCTAssertGreaterThan(result_01, 0)
         XCTAssertGreaterThan(result_02, 0)
     }
@@ -60,6 +74,14 @@ final class BowlShapedFunctionsTest: XCTestCase {
         XCTAssertGreaterThan(result_01, 0)
         XCTAssertGreaterThan(result_02, 0)
     }
+    
+    func testSumOfDifferentPowersFuncNegaitiveSamples() throws {
+        // Values have to be greater than 0.
+        let result_01 = BowlShapedFunctions.sumOfDifferentPowersFunc(parameter: negativeSample_01, parameter: negativeSample_02)
+        let result_02 = BowlShapedFunctions.sumOfDifferentPowersFunc(parameter: negativeSample_02, parameter: negativeSample_01)
+        XCTAssertGreaterThan(result_01, 0)
+        XCTAssertGreaterThan(result_02, 0)
+    }
 
     //MARK: Positive and Negative Samples compared to Minimum Tests
     
@@ -78,6 +100,14 @@ final class BowlShapedFunctionsTest: XCTestCase {
         XCTAssertGreaterThan(result_01, 0)
         XCTAssertGreaterThan(result_02, 0)
     }
+    
+    func testSumOfDifferentPowersFuncMixedSamples() throws {
+        // Values have to be greater than 0.
+        let result_01 = BowlShapedFunctions.sumOfDifferentPowersFunc(parameter: positiveSample_01, parameter: negativeSample_01)
+        let result_02 = BowlShapedFunctions.sumOfDifferentPowersFunc(parameter: negativeSample_02, parameter: positiveSample_02)
+        XCTAssertGreaterThan(result_01, 0)
+        XCTAssertGreaterThan(result_02, 0)
+    }
   
     
     //MARK: Additional Tests
@@ -85,16 +115,20 @@ final class BowlShapedFunctionsTest: XCTestCase {
     func testGetMinimumOfFunction() throws {
         let bohachevskyFunctionMinimum = BowlShapedFunctions.getMinimumOf(.BohachevskyFunction)
         let sphereFunctionMinimum = BowlShapedFunctions.getMinimumOf(.SphereFunction)
+        let sumOfDifferentPowersFunctionMinimum = BowlShapedFunctions.getMinimumOf(.SumOfDifferentPowersFunction)
         
         XCTAssertEqual(bohachevskyFunctionMinimum, 0.0)
         XCTAssertEqual(sphereFunctionMinimum, 0.0)
+        XCTAssertEqual(sumOfDifferentPowersFunctionMinimum, 0.0)
     }
     
     func testGetInputForMinimumOfFunction() throws {
         let bohachevskyFunctionInputForMinimum = BowlShapedFunctions.getInputForMinimumOf(.BohachevskyFunction)
         let sphereFunctionInputForMinimum = BowlShapedFunctions.getInputForMinimumOf(.SphereFunction)
+        let sumOfDifferentPowersFunctionInputForMinimum = BowlShapedFunctions.getInputForMinimumOf(.SumOfDifferentPowersFunction)
         
         XCTAssert(bohachevskyFunctionInputForMinimum == (0.0, 0.0))
         XCTAssert(sphereFunctionInputForMinimum == (0.0, 0.0))
+        XCTAssert(sumOfDifferentPowersFunctionInputForMinimum == (0.0, 0.0))
     }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-/// This struct contains smooth and plated shaped functions.
+/// This struct contains smooth and plate shaped functions.
 /// Each function has one global minimum.
 public struct PlateShapedFunctions {
     
@@ -77,7 +77,7 @@ public struct PlateShapedFunctions {
     }
 }
 
-/// This represents a type for each plate shaped function by its name.
+/// Represents a type for each plate shaped function by its name.
 public enum PlateShapedFunctionNames {
     case BoothFunction
     case MatyasFunction

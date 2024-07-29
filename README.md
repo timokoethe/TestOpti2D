@@ -19,6 +19,8 @@ Please note that each optimization function in this framework has a specific inp
 |----------------------|---------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------|
 | Bohachevsky Function | <sub>$x \in [-100, 100] \times [-100, 100]$</sub> | <sub>$f(x) = x_1^2+2x_2^2 - 0.3cos(3\pi x_1) - 0.4cos(4\pi x_2) + 0.7$</sub> | <sub>$f(x^* ) = 0$, at<br> $x^* = (0, 0)$</sub> |
 | Sphere Function  | <sub>$x \in [-5.12, 5.12] \times [-5.12, 5.12]$</sub> | <sub>$f(x) = x_1^2 + x_2^2$</sub> | <sub>$f(x^* ) = 0$, at<br> $x^* = (0, 0)$</sub> |
+| Sum of different Powers Function  | <sub>$x \in [-1, 1] \times [-1, 1]$</sub> | <sub>$f(x) = \mid x_1\mid^2 + \mid x_2\mid^3 $</sub> | <sub>$f(x^* ) = 0$, at<br> $x^* = (0, 0)$</sub> |
+
 
 ## Installation
 1. Please copy the following package URL to import the framework in your Xcode project:
@@ -30,6 +32,8 @@ https://github.com/timokoethe/TestOpti2D.git
 import TestOpti2D
 ```
 3. You’re all set! You can now use the functionality provided by TestOpti2D in your project.
+
+Check out our documentation [here](https://timokoethe.com/testopti2d/documentation/testopti2d).
 
 ## Contributing & Support
 If you encounter any bugs or have feature requests, please feel free to open an issue on our GitHub repository. If you have any questions, feedback, or need assistance with TestOpti2D, please don't hesitate to contact us. We're here to help!
