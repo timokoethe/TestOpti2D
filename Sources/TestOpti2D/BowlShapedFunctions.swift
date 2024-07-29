@@ -5,7 +5,7 @@ import Foundation
 public struct BowlShapedFunctions {
     
     /// Calculates a target value according to the Bohachevsky Function. Normally the
-    /// function is evaluated on a rectangle with x1, x2 in [-100; 100].
+    /// function is evaluated on a square with x1, x2 in [-100; 100].
     /// - Parameters:
     ///   - x1: arbitrary double value
     ///   - x2: arbitrary double value
@@ -29,6 +29,16 @@ public struct BowlShapedFunctions {
         return result
     }
   
+    /// Calculates a target value according to the Sum of differen Powers Function. Normally the
+    /// function is evaluated on the hypercube with x1, x2 in [-1, 1]
+    /// - Parameters:
+    ///   - x1: arbitrary double value
+    ///   - x2: arbitrary double value
+    /// - Returns: target value calculated by the function
+    public static func sumOfDifferentPowersFunc(parameter x1: Double, parameter x2: Double) -> Double {
+        let result: Double = pow(abs(x1), 2) + pow(abs(x2), 3)
+        return result
+    }
     
     /// Returns the global minimum of a given function in the defined input domain.
     /// - Parameter functionName: function to get the minimum
@@ -38,6 +48,8 @@ public struct BowlShapedFunctions {
         case .BohachevskyFunction:
             return 0.0
         case .SphereFunction:
+            return 0.0
+        case .SumOfDifferentPowersFunction:
             return 0.0
         }
     }
@@ -51,6 +63,8 @@ public struct BowlShapedFunctions {
             return (0.0, 0.0)
         case .SphereFunction:
             return (0.0, 0.0)
+        case .SumOfDifferentPowersFunction:
+            return (0.0, 0.0)
         }
     }
 }
@@ -59,4 +73,5 @@ public struct BowlShapedFunctions {
 public enum BowlShapedFunctionNames {
     case BohachevskyFunction
     case SphereFunction
+    case SumOfDifferentPowersFunction
 }
