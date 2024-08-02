@@ -1,0 +1,25 @@
+name: DocC
+
+on: 
+    push:
+        branches:
+            - main
+
+jobs:
+  build:
+    name: DocC
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build Documentation
+      run: xcodebuild docbuild -scheme TestOpti2D -destination 'generic/platform=macOS' -derivedDataPath ./Documentation DOCC_HOSTING_BASE_PATH='testopti2d'
+    - name: Get Files
+      run: ls
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: "Documentation/Build/Products/Debug/TestOpti2D.doccarchive/"
+        dangerous-clean-slate: true
