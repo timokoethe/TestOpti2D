@@ -2,6 +2,10 @@
 Simple to more complex target functions projecting from a two dimensional state space to a one dimensional target space for testing optimization algorithms.
 @Metadata {
     @Available(macOS, introduced: "10.14")
+    @Available(iOS, introduced: "12.0")
+    @Available(watchOS, introduced: "4.0")
+    @Available(visionOS, introduced: "1.0")
+    @Available(tvOS, introduced: "12.0")
     @PageColor(orange)
 }
 ## Overview
