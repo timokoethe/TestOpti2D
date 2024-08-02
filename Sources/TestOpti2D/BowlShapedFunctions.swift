@@ -14,7 +14,7 @@ public struct BowlShapedFunctions {
         let firstExp: Double = pow(x1, 2) + 2 * pow(x2, 2)
         let secondExp: Double = -0.3 * cos(3.0 * Double.pi * x1) - 0.4 * cos(4.0 * Double.pi * x2) + 0.7
         
-        let result: Double = firstExp - secondExp
+        let result: Double = firstExp + secondExp
         return result
     }
     
