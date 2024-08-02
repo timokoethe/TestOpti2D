@@ -2,6 +2,8 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/license/mit)
 [![Build](https://github.com/timokoethe/OptiMathKit/actions/workflows/build.yml/badge.svg)](https://github.com/timokoethe/OptiMathKit/actions/workflows/build.yml)
 [![Test](https://github.com/timokoethe/OptiMathKit/actions/workflows/test.yml/badge.svg)](https://github.com/timokoethe/OptiMathKit/actions/workflows/test.yml)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Ftimokoethe%2FTestOpti2D%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/timokoethe/TestOpti2D)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Ftimokoethe%2FTestOpti2D%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/timokoethe/TestOpti2D)
 
 TestOpti2D is a Swift framework for macOS that provides a comprehensive collection of target functions designed specifically for testing optimization algorithms aimed at finding global minima. These functions, often used as benchmarks in optimization research, are characterized by having one or more local minima and exactly one global minimum in given input domain. Each target function in the framework takes two inputs of type Double and produces a single output of type Double, effectively projecting from a state space to a target space. The functions are grouped according to their significant physical properties and shapes to facilitate targeted testing.
 
